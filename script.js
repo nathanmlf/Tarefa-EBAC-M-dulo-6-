@@ -1,9 +1,7 @@
-// Declarações
+// Variáveis
 const botaoChutar = document.getElementById("botaoChutar");
 
 let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
-console.log(typeof parseInt(numeroAleatorio));
-console.log(numeroAleatorio);
 
 let maximoTentativas = 10;
 document.getElementById("tentativasValor").textContent = maximoTentativas;
@@ -47,8 +45,4 @@ botaoChutar.addEventListener("click", () => {
 
   document.getElementById("tentativasValor").textContent = maximoTentativas;
   document.getElementById("mensagensValor").textContent = mensagensValor;
-
-  console.log("Número aleatório: ", numeroAleatorio);
-  console.log("Número de tentativas: ", maximoTentativas);
-  console.log("Número digitado: ", pegarValor);
 });
